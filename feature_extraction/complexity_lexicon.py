@@ -23,6 +23,7 @@ class WordComplexityLexicon:
             word = max(phrase, key=len)
         else:
             word = phrase
+
         if word in self.word_complexity.keys():
             return [self.word_complexity[word], 1.0]
         else:
